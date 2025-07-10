@@ -16,7 +16,7 @@ def get_todo_by_id(db:Session,todo_id:int,user_id:int):
 def create_todo(db: Session,todo_data: TodoCreate, user: User):
     new_todo = Todo(
         task=todo_data.task,
-        completed=todo_data.completed,
+        completed=False,
         user_id=user.id,
         created_at=datetime.now(),
         updated_at=datetime.now()
@@ -35,7 +35,7 @@ def update_todo(db:Session,todo:Todo,todo_data:TodoUpdate):
     if todo_data.completed is not None:
         todo.completed = todo_data.completed
 
-    todo.updated_at(datetime.now())
+    todo.updated_at = datetime.now()
     db.commit()
     db.refresh(todo)
     return todo

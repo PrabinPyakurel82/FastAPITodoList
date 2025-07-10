@@ -3,11 +3,12 @@ import models
 
 
 from core import db
-from routes import auth_routes
+from routes import auth_routes,todo_routes
 
 
 app = FastAPI()
 app.include_router(auth_routes.router)
+app.include_router(todo_routes.router)
 
 db.Base.metadata.create_all(bind=db.engine)
 

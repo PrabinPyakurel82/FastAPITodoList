@@ -1,9 +1,14 @@
 
-POST http://localhost:8000/auth/register
+### Get Todos
+GET http://localhost:8000/todos/
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxIiwiZXhwIjoxNzUyMTkyMzI3fQ.WiV3qpBhvOfTLGs2McDfyXRXtFhb7glG5-3XsdD7lJc
 Content-Type: application/json
 
+
+### Create todos
+POST http://localhost:8000/todos/
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxIiwiZXhwIjoxNzUyMTkyMzI3fQ.WiV3qpBhvOfTLGs2McDfyXRXtFhb7glG5-3XsdD7lJc
+
 {
-   "full_name": "prabin",
-   "email": "prabinpyakurel82@gmail.com",
-   "password": "prabin@123"
+    "task": "Bring groceries"
 }
