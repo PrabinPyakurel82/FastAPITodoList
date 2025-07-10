@@ -1,2 +1,9 @@
 
-GET http://localhost:8000/
+POST http://localhost:8000/auth/register
+Content-Type: application/json
+
+{
+   "full_name": "prabin",
+   "email": "prabinpyakurel82@gmail.com",
+   "password": "prabin@123"
+}

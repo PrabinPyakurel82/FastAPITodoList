@@ -15,7 +15,7 @@ class UserOut(BaseModel):
     email: EmailStr
 
     class Config:
-        orm_mode = True
+        from_attributes = True
 
 class TodoCreate(BaseModel):
     task: str
@@ -33,4 +33,4 @@ class TodoOut(BaseModel):
     updated_at: Optional[datetime]
 
     class Config:
-        orm_mode = True
+       from_attributes = True
