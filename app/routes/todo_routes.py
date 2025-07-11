@@ -9,7 +9,7 @@ from models import User, Todo
 from schemas import TodoCreate, TodoUpdate, TodoOut
 import crud
 
-router = APIRouter(prefix='/todos', tags=["Tosos"])
+router = APIRouter(prefix='/todos', tags=["Todos"])
 
 
 @router.get("/",response_model=List[TodoOut])

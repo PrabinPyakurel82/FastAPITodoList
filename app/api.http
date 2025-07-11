@@ -12,3 +12,20 @@ Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxIiwiZXhwI
 {
     "task": "Bring groceries"
 }
+
+
+### Update todo
+PUT http://localhost:8000/todos/2
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxIiwiZXhwIjoxNzUyMTkyMzI3fQ.WiV3qpBhvOfTLGs2McDfyXRXtFhb7glG5-3XsdD7lJc
+
+{
+    "task":"Make Dinner"
+    
+}
+
+### Delete todo
+
+DELETE  http://localhost:8000/todos/1
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxIiwiZXhwIjoxNzUyMTkyMzI3fQ.WiV3qpBhvOfTLGs2McDfyXRXtFhb7glG5-3XsdD7lJc
+
+

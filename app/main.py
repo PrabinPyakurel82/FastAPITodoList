@@ -15,5 +15,5 @@ db.Base.metadata.create_all(bind=db.engine)
 
 @app.get("/")
 async def index():
-    return {"Message": "Hello Woerld"}
+    return {"Message": "Welcome to the todo application."}
 
