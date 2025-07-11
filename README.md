@@ -23,7 +23,7 @@ This is a backend API for a personal To-Do List application built using FastAPI.
 ### 1. Clone the repository
 
 ```bash
-git clone https://github.com/PrabinPyakruel82/FastAPITodoList.git
+git clone https://github.com/PrabinPyakurel82/FastAPITodoList.git
 cd FastAPITodoList
 ```
 
